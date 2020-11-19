@@ -1,0 +1,19 @@
+.contact{
+    background: $lighterBlue;
+    padding: 64px 16px 92px 16px;
+    &__description{
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 32px;
+        margin: 32px 0 56px 0;
+        text-align: center;
+    }
+    &__header{
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 48px;
+        color: $textDark;
+        margin: 0;
+        text-align: center;
+    }
+}
