@@ -12,22 +12,22 @@
             max-width: 786px;
             margin: 0 auto;
             position: relative;
-        }
-        &:before, &::after{
-            width: 82.94px;
-            height: 254.88px;
-            position: absolute;
-            content: "";
-            display: block;
-            top: 0;
-        }
-        &:before{
-            background: url(/src/assets/img/hero-left.svg);
-            right: 100%;
-        }
-        &:after{
-            background: url(/src/assets/img/hero-right.svg);
-            left: 100%;
+            &:before, &::after{
+                width: 82.94px;
+                height: 254.88px;
+                position: absolute;
+                content: "";
+                display: block;
+                top: 0;
+            }
+            &:before{
+                background: url(/src/assets/img/hero-left.svg);
+                right: 100%;
+            }
+            &:after{
+                background: url(/src/assets/img/hero-right.svg);
+                left: 100%;
+            }
         }
     }
     &__mail{
