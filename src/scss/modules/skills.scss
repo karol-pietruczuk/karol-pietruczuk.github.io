@@ -2,12 +2,27 @@
     background: $blue;
     color: #fff;
     padding: 64px 16px 88px;
+    &__columns{
+        @media (min-width: $desktop){
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            max-width: 1184px;
+            margin: 0 auto;
+        }
+    }
     &__header{
         font-weight: bold;
         font-size: 36px;
         line-height: 48px;
         text-align: center;
         margin: 0;
+        @media (min-width: $desktop){
+            font-size: 48px;
+            line-height: 56px;
+        }
+    }
+    @media (min-width: $desktop){
+        padding: 80px 16px 176px;
     }
 }
 
@@ -19,7 +34,6 @@
     width: 288px;
     margin: 0 auto;
     list-style-type: none;
-    // padding: 0;
     &__item{
         padding: 0 0 0 24px;
         margin: 0 0 16px;
@@ -55,7 +69,9 @@
         display: block;
         margin-top: 64px;
         text-align: center;
-    }
+        @media (min-width: $desktop){
+            margin-top: 128px;
+        }    }
     &__header{
         font-weight: bold;
         font-size: 24px;
