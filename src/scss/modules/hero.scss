@@ -1,5 +1,9 @@
 .hero{
     padding: 64px 16px 88px;
+    @media (min-width: $tablet){
+        max-width: 768px;
+        margin: 0 auto;
+    }
     &__mail{
         border-radius: 64px;
         color: #fff;
@@ -18,9 +22,38 @@
         line-height: 32px;
         text-align: center;
         color: $textDark;
+        @media (min-width: $desktop){
+            font-size: 32px;
+            line-height: 40px;
+        }
     }
     &__hello{
-        // display: none;
+        display: none;
+        @media (min-width: $desktop){
+            display: block;
+            background: $blue;
+            color: #fff;
+            border-radius: 16px;
+            padding: 16px 19px;
+            font-weight: bold;
+            font-size: 32px;
+            position: relative;
+            &:after{
+                content:"";
+                position: absolute;
+                top: 99%;
+                left: 25.42px;
+                display: block;
+                width: 17.42px;
+                height: 22.66px;
+                background: url(/src/assets/img/speech.svg);
+            }
+        }
+    }
+    &__bubble{
+        position: absolute;
+        left: calc(50% + 90px);
+        top: -26px;
     }
     &__image{
         box-sizing: content-box;
@@ -28,14 +61,18 @@
         height: 96px;
         border-radius: 50%;
         border: 16px solid #F6F9FD;
+        @media (min-width: $desktop){
+            width: 178px;
+            height: 178px;
+            border: 24px solid #F6F9FD;
+        }
     }
     &__image-container{
         display: flex;
         align-items: center;
         justify-content: center;
-
+        position: relative;
     }
-
     &__link{
         font-weight: bold;
         color: $lightBlue;
@@ -47,6 +84,10 @@
         line-height: 32px;
         text-align: center;
         margin-bottom: 48px;
+        @media (min-width: $desktop){
+            font-size: 20px;
+            line-height: 40px;
+        }
     }
     &__special{
         color: $blue;
