@@ -1,12 +1,20 @@
 .contact{
     background: $lighterBlue;
-    padding: 64px 16px 92px 16px;
+    padding: 64px 16px 92px;
+    text-align: center;
+    @media (min-width: $desktop){
+        padding: 92px 16px 176px;
+    }
     &__description{
         font-weight: 300;
         font-size: 16px;
         line-height: 32px;
         margin: 32px 0 56px 0;
-        text-align: center;
+        @media (min-width: $desktop){
+            font-size: 20px;
+            line-height: 40px;
+            margin: 40px 0 0;
+        }
     }
     &__header{
         font-weight: bold;
@@ -14,6 +22,31 @@
         line-height: 48px;
         color: $textDark;
         margin: 0;
-        text-align: center;
+        @media (min-width: $desktop){
+            font-size: 48px;
+            line-height: 56px;
+        }
+    }
+    &__links{
+        @media (min-width: $desktop){
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 580px;
+            margin: 128px auto 0;
+        }
+    }
+    &__mail{
+        border-radius: 64px;
+        color: #fff;
+        background-color: $lightBlue;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 40px;
+        text-decoration: none;
+        display: block;
+        margin: auto;
+        padding: 4px 14px;
+        width: 288px;
     }
 }

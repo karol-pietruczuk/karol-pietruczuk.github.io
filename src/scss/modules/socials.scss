@@ -4,6 +4,9 @@
     display: flex;
     justify-content: center;
     margin: 0 0 68px;
+    @media (min-width: $desktop){
+        margin: 0;
+    }
     &__item{
         margin: 0 12px;
     }
@@ -17,18 +20,5 @@
         align-items: center;
         justify-content: center;
         box-shadow: 0px 4px 8px rgba(16, 112, 202, 0.15);
-    }
-    &__mail{
-        border-radius: 64px;
-        color: #fff;
-        background-color: $lightBlue;
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 40px;
-        text-decoration: none;
-        display: block;
-        margin: auto;
-        padding: 4px 14px;
-        width: 288px;
     }
 }

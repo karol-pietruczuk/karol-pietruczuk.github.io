@@ -1,5 +1,5 @@
 .hero{
-    padding: 64px 16px 88px;
+    padding: 98px 15px 107px;
     @media (min-width: $tablet){
         max-width: 768px;
         margin: 0 auto;
@@ -10,8 +10,8 @@
     }
     &__description{
         @media (min-width: $desktop){
-            max-width: 786px;
-            margin: 0 auto;
+            max-width: 804px;
+            margin: 48px auto 0;
             position: relative;
             &:before, &::after{
                 width: 82.94px;
