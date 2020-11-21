@@ -1,11 +1,20 @@
 .projects{
     padding: 64px 16px 88px;
+    @media (min-width: $desktop){
+        padding: 80px 16px 176px;
+    }
     &__description{
         font-weight: 300;
         font-size: 16px;
         line-height: 32px;
         text-align: center;
-        margin: 32px 0 46px;
+        margin: 32px auto 46px;
+        max-width: 782px;
+        @media (min-width: $desktop){
+            font-size: 20px;
+            line-height: 40px;
+            margin-bottom: 128px
+        }
     }
     &__header{
         font-weight: bold;
@@ -14,6 +23,10 @@
         color: $textDark;
         margin: 0;
         text-align: center;
+        @media (min-width: $desktop){
+            font-size: 48px;
+            line-height: 56px;
+        }
     }
 }
 
@@ -27,6 +40,9 @@
     font-size: 13px;
     line-height: 24px;
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+    @media (min-width: $desktop){
+        font-size: 16px;
+    }
     &__circle{
         display: block;
         height: 8px;
@@ -37,11 +53,21 @@
     }
     &__content{
         padding: 24px 16px;
+        @media (min-width: $desktop){
+            padding: 18px 48px 66px;
+        }
     }
     &__grid{
         display: grid;
         grid-template-columns: 102px 1fr;
         column-gap: 8px;
+        margin: 0 0 0 16px;
+        @media (min-width: $desktop){
+            grid-template-columns: 116px 1fr;
+        }
+        &--description{
+            margin-bottom: 24px;
+        }
     }
     &__label{
         display: block;
@@ -57,6 +83,10 @@
         font-size: 13px;
         line-height: 24px;
         color: #fff;
+        margin-top: 24px;
+        @media (min-width: $desktop){
+            font-size: 16px;
+        }
     }
     &__window{
         height: 40px;
@@ -69,9 +99,13 @@
 
 .projects-grid{
     display: grid;
+    grid-template-columns: 1fr;
     column-gap: 24px;
     row-gap: 24px;
+    max-width: 450px;
+    margin: 0 auto;
     @media (min-width: $tablet){
         grid-template-columns: 1fr 1fr;
+        max-width: 1184px;
     }
 }
