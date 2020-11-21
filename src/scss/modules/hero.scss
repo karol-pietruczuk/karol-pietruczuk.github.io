@@ -1,124 +1,124 @@
-.hero{
-    padding: 98px 15px 107px;
-    @media (min-width: $tablet){
-        max-width: 768px;
-        margin: 0 auto;
-    }
-    @media (min-width: $desktop){
-        max-width: 100%;
-        padding: 80px 16px 176px;
-    }
-    &__description{
-        @media (min-width: $desktop){
-            max-width: 804px;
-            margin: 48px auto 0;
-            position: relative;
-            &:before, &::after{
-                width: 82.94px;
-                height: 254.88px;
-                position: absolute;
-                content: "";
-                display: block;
-                top: 0;
-            }
-            &:before{
-                background: url(/src/assets/img/hero-left.svg);
-                right: 100%;
-            }
-            &:after{
-                background: url(/src/assets/img/hero-right.svg);
-                left: 100%;
-            }
-        }
-    }
-    &__mail{
-        border-radius: 64px;
-        color: #fff;
-        background-color: $lightBlue;
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 40px;
-        text-decoration: none;
-        display: block;
-        margin: auto;
-        padding: 4px 14px;
-        width: 288px;
-    }
-    &__header{
-        font-size: 26px;
-        line-height: 32px;
-        text-align: center;
-        color: $textDark;
-        @media (min-width: $desktop){
-            font-size: 32px;
-            line-height: 40px;
-        }
-    }
-    &__hello{
-        display: none;
-        @media (min-width: $desktop){
-            display: block;
-            background: $blue;
-            color: #fff;
-            border-radius: 16px;
-            padding: 16px 19px;
-            font-weight: bold;
-            font-size: 32px;
-            position: relative;
-            &:after{
-                content:"";
-                position: absolute;
-                top: 99%;
-                left: 25.42px;
-                display: block;
-                width: 17.42px;
-                height: 22.66px;
-                background: url(/src/assets/img/speech.svg);
-            }
-        }
-    }
-    &__bubble{
+.hero {
+  padding: 98px 15px 107px;
+  @media (min-width: $tablet) {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+  @media (min-width: $desktop) {
+    max-width: 100%;
+    padding: 80px 16px 176px;
+  }
+  &__description {
+    @media (min-width: $desktop) {
+      max-width: 804px;
+      margin: 48px auto 0;
+      position: relative;
+      &:before,
+      &::after {
+        width: 82.94px;
+        height: 254.88px;
         position: absolute;
-        left: calc(50% + 90px);
-        top: -26px;
+        content: "";
+        display: block;
+        top: 0;
+      }
+      &:before {
+        background: url(/src/assets/img/hero-left.svg);
+        right: 100%;
+      }
+      &:after {
+        background: url(/src/assets/img/hero-right.svg);
+        left: 100%;
+      }
     }
-    &__image{
-        box-sizing: content-box;
-        width: 96px;
-        height: 96px;
-        border-radius: 50%;
-        border: 16px solid #F6F9FD;
-        @media (min-width: $desktop){
-            width: 178px;
-            height: 178px;
-            border: 24px solid #F6F9FD;
-        }
+  }
+  &__mail {
+    border-radius: 64px;
+    color: #fff;
+    background-color: $lightBlue;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 40px;
+    text-decoration: none;
+    display: block;
+    margin: auto;
+    padding: 4px 14px;
+    width: 288px;
+  }
+  &__header {
+    font-size: 26px;
+    line-height: 32px;
+    text-align: center;
+    color: $textDark;
+    @media (min-width: $desktop) {
+      font-size: 32px;
+      line-height: 40px;
     }
-    &__image-container{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
+  }
+  &__hello {
+    display: none;
+    @media (min-width: $desktop) {
+      display: block;
+      background: $blue;
+      color: #fff;
+      border-radius: 16px;
+      padding: 16px 19px;
+      font-weight: bold;
+      font-size: 32px;
+      position: relative;
+      &:after {
+        content: "";
+        position: absolute;
+        top: 99%;
+        left: 25.42px;
+        display: block;
+        width: 17.42px;
+        height: 22.66px;
+        background: url(/src/assets/img/speech.svg);
+      }
     }
-    &__link{
-        font-weight: bold;
-        color: $lightBlue;
-        text-decoration: none;
+  }
+  &__bubble {
+    position: absolute;
+    left: calc(50% + 90px);
+    top: -26px;
+  }
+  &__image {
+    box-sizing: content-box;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    border: 16px solid #f6f9fd;
+    @media (min-width: $desktop) {
+      width: 178px;
+      height: 178px;
+      border: 24px solid #f6f9fd;
     }
-    &__paragraph{
-        font-weight: 300;
-        font-size: 16px;
-        line-height: 32px;
-        text-align: center;
-        margin-bottom: 48px;
-        @media (min-width: $desktop){
-            font-size: 20px;
-            line-height: 40px;
-        }
+  }
+  &__image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  &__link {
+    font-weight: bold;
+    color: $lightBlue;
+    text-decoration: none;
+  }
+  &__paragraph {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+    margin-bottom: 48px;
+    @media (min-width: $desktop) {
+      font-size: 20px;
+      line-height: 40px;
     }
-    &__special{
-        color: $blue;
-        white-space: nowrap;
-    }
-
+  }
+  &__special {
+    color: $blue;
+    white-space: nowrap;
+  }
 }
