@@ -7,7 +7,7 @@ My simple portfolio website
 ## Tools
 
 - WTF Webpack starterkit
-- HTML + CSS + JS
+- HTML5 + CSS3 + JS ES6
 - Github API
 
 ## Url Address
